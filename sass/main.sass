@@ -1,0 +1,237 @@
+@import "bourbon/bourbon"
+
+body
+    font-family: "RalewayRegular", sans-serif
+    font-weight: normal
+    font-size: 14px
+    min-width: 320px
+    position: relative
+    line-height: 1.42857
+    -webkit-font-smoothing: antialised
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: red
+body input:required:valid,
+body textarea:required:valid
+    color: green
+section
+    padding: 30px 0px
+    text-align: center
+    font-size: 20px
+h2
+    font-family: "FuturaRoundBold", sans-serif
+    font-size: 35px;
+    display: inline-block
+    padding: 0 40px
+    
+header
+    background-image: url(../img/bg1.jpg)  
+    background-position: top center
+    background-attachment: fixed;
+    background-size: cover
+    color: #fff
+    min-height: 530px
+    position: relative
+    button
+        position: fixed
+        top: 5px
+        left: 5px
+        font-size: 35px
+        background-color: #000
+        color: #B6B992
+        border: none
+        padding: 5px 15px
+        cursor: pointer
+        z-index: 2000
+        opacity: 0.8
+        border-radius: 10px
+    .nav
+        text-align: center
+        background: #440A0A
+        opacity: 0.7
+        position: fixed
+        width: 100%
+        z-index: 1000;
+
+        ul li
+            list-style-type: none
+            display: inline-block
+            a
+                font-size: 21px
+                font-family: "FuturaRoundBold", sans-serif
+                padding: 15px
+                color: #EAB556
+                text-decoration: none
+                &:hover, :focus
+                    color: #D26308
+                    text-decoration: none
+                    opacity: 1
+
+.top_wrapper 
+    display: table
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    .top_descr 
+        display: table-row
+        .top_centered 
+            display: table-cell
+            text-align: center
+            vertical-align: middle
+            .top_text 
+                display: inline-block
+                -webkit-transition: all 1s ease
+                transition: all 1s ease
+                span
+                    color: #CAA95C
+                    display: inline-block
+                    border-bottom: 3px #727B59 solid
+                    padding: 10px 120px;
+                    font-size: 40px;
+                    margin-bottom: 0;
+                    font-family: "FuturaRoundBold", sans-serif
+                h1
+                    color: #B6B992
+                    font-size: 55px
+                    margin-top: 0
+                    font-family: "FuturaRoundBold", sans-serif
+                    text-transform: uppercase;
+#skills
+    background-color: #77825B
+    h2
+        color: #56431F
+        border-bottom: 1px #56431F solid
+    p
+        border: 5px #B6B992 solid
+        padding: 10px
+        border-radius: 30px
+        -webkit-box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
+        -moz-box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
+        box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
+        strong
+            font-family: "FuturaRoundBold", sans-serif
+.insert
+    height: 50px
+    width: 100%
+    background-image: url(../img/bg1.jpg) 
+    background-attachment: fixed
+#how_work
+    background-color: #5B8E8C
+    h2
+        color: #1A413E
+        border-bottom: 1px #1A413E solid
+
+.left 
+    text-align: right
+    border-right: #71B5B2 1px solid
+.resume_item 
+    margin-bottom: 40px
+    .year 
+        font-family: "FuturaRoundBold", sans-serif
+        color: #772800
+.right
+    text-align: left
+#portfolio
+    background-color: #7D6E6A;
+    h2
+        border-bottom: 1px #333 solid
+        margin-bottom: 0
+    h3
+        font-size: 16px
+    .descr-cont
+        width: 300px
+        position: relative
+        margin: 0 auto 10px
+        .descr 
+            position: absolute
+            font-size: 16px;
+            left: 0
+            width: 300px
+            height: 100%
+            background-color: rgba(0, 0, 0, .7)
+            color: #fff
+            padding: 70px 7px 0 7px
+            text-align: center
+            transform: rotateY(90deg)
+            opacity: 0
+            -webkit-transition: all .5s
+            -o-transition: all .5s
+            transition: all .5s
+            a
+                padding: 8px
+                color: #D6C9A7
+                border: 2px #D6C9A7 solid
+                margin-top: 10px
+                display: inline-block
+                cursor: pointer
+            :hover
+                text-decoration: none
+
+            
+        img
+            width: 300px
+            height: 250px
+        &:hover .descr 
+            opacity: 1
+            top: 0
+            transform: rotateY(0deg)
+#contacts
+    background-color: #845E50
+    h2
+        color: #610000
+        border-bottom: 1px #610000 solid
+        margin-bottom: 0
+    p
+        color: #000
+        font-size: 25px
+        span
+            color: #860000
+            font-family: "FuturaRoundBold", sans-serif
+
+
+.hidden
+    display: none
+.mfp-content
+    max-width: 500px
+    position: relative
+    .site
+        margin: 0 auto
+        padding-top: 10px        
+        color: #000
+        background-color: #FFF
+        text-align: center
+        h3            
+            color: #D46F3B
+        p
+          padding: 10px
+          text-align: left
+        a
+            display: inline-block
+            margin: 0 auto 
+            border: 2px #4283BC solid
+            text-transform: uppercase
+            padding: 8px
+            margin-bottom: 10px  
+            &:hover
+                text-decoration: none
+                background-color: #4283BC
+                color: #fff
+        img
+            width: 100%
+            bottom: 0
+    
+footer
+    background-color: #000
+    text-align: center
+    padding: 40px
+    span
+        color: #fff
+        display: inline-block
+
+.mPS2id-highlight 
+    color: #D26308 !important
