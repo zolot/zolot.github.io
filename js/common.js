@@ -22,15 +22,17 @@ $(document).ready(function() {
 
 
 
-
 	$(".nav a").mPageScroll2id({
 		scrollSpeed : 200
 	});
 
 	$(window).load(function() {
-	$(".top_text, #skills h2, #skills p, #how_work h2, #portfolio h2, #portfolio h3, #contacts h2, .descr-cont").animated("zoomIn","zoomIn")
-	$(".left .resume_item").animated("fadeInLeft","fadeInLeft")
-	$(".right .resume_item").animated("fadeInRight","fadeInRight")
+		$(".loader_inner").fadeOut();
+	    $(".loader").delay(400).fadeOut("slow");
+
+		$(".top_text, #skills h2, #skills p, #how_work h2, #portfolio h2, #portfolio h3, #contacts h2, .descr-cont").animated("zoomIn","zoomIn")
+		$(".left .resume_item").animated("fadeInLeft","fadeInLeft")
+		$(".right .resume_item").animated("fadeInRight","fadeInRight")
 });
 
 	$('.popup').magnificPopup();
