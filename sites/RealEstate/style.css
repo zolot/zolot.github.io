@@ -1,0 +1,12 @@
+body { margin: 0; }
+
+header {
+	height: 654px;
+	background: #272727;
+}
+
+	.slide-picture {
+		height: 597px;
+		width: 1264px;
+		margin-top: 57px;
+	}

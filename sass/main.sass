@@ -1,13 +1,15 @@
 @import "bourbon/bourbon"
 
 body
-    font-family: "RalewayRegular", sans-serif
+    font-family: "RobotoRegular", sans-serif
     font-weight: normal
+    color: #000
     font-size: 14px
     min-width: 320px
     position: relative
     line-height: 1.42857
     -webkit-font-smoothing: antialised
+    text-shadow: 0px 1px 1px #424242;
 
 
 body input:focus:required:invalid,
@@ -17,30 +19,31 @@ body input:required:valid,
 body textarea:required:valid
     color: green
 section
-    padding: 30px 0px
     text-align: center
     font-size: 20px
+    padding: 15px 0
 h2
-    font-family: "FuturaRoundBold", sans-serif
+    font-family: "RobotoBold", sans-serif
     font-size: 35px;
     display: inline-block
     padding: 0 40px
+    text-transform: uppercase
     
 header
-    background-image: url(../img/bg1.jpg)  
-    background-position: top center
+    background-image: url(../img/bg8.jpg)  
+    background-position: center
     background-attachment: fixed;
     background-size: cover
     color: #fff
-    min-height: 530px
+    min-height: 650px
     position: relative
     button
         position: fixed
         top: 5px
         left: 5px
         font-size: 35px
-        background-color: #000
-        color: #B6B992
+        background-color: #010335;
+        color: #FFFFFF;
         border: none
         padding: 5px 15px
         cursor: pointer
@@ -49,8 +52,8 @@ header
         border-radius: 10px
     .nav
         text-align: center
-        background: #440A0A
-        opacity: 0.7
+        background: #000052
+        opacity: 0.85
         position: fixed
         width: 100%
         z-index: 1000;
@@ -59,13 +62,13 @@ header
             list-style-type: none
             display: inline-block
             a
-                font-size: 21px
-                font-family: "FuturaRoundBold", sans-serif
+                font-size: 18px
+                font-family: "RobotoBold", sans-serif
                 padding: 15px
-                color: #EAB556
+                color: #F9FB7B
                 text-decoration: none
                 &:hover, :focus
-                    color: #D26308
+                    color: #FF4141
                     text-decoration: none
                     opacity: 1
 
@@ -77,54 +80,105 @@ header
     top: 0
     left: 0
     z-index: 10
+    padding-bottom: 150px;
     .top_descr 
         display: table-row
         .top_centered 
             display: table-cell
             text-align: center
-            vertical-align: middle
+            vertical-align: bottom
             .top_text 
-                display: inline-block
+                display: inline-block                
+                color: #fff
                 -webkit-transition: all 1s ease
                 transition: all 1s ease
-                span
-                    color: #CAA95C
+                .advertising 
+                    text-align: center
+                    font-size: 40px;
+                    color: #D40000;
+                    font-style: italic;
+                    max-width: 1024px
+                    background-color: #E5F4FF;
+                    opacity: 0.75
+                    padding: 15px
+                > span
                     display: inline-block
-                    border-bottom: 3px #727B59 solid
+                    border-bottom: 3px #fff solid
                     padding: 10px 120px;
                     font-size: 40px;
                     margin-bottom: 0;
-                    font-family: "FuturaRoundBold", sans-serif
                 h1
-                    color: #B6B992
                     font-size: 55px
                     margin-top: 0
-                    font-family: "FuturaRoundBold", sans-serif
+                    margin-bottom: 30px
+                    font-family: "RobotoBold", sans-serif
                     text-transform: uppercase;
+.section-border   
+    position: absolute
+.section-border-top 
+    border-style: solid solid solid dashed
+    bottom: 0
+    border-width: 60px 0 0 2880px
+.section-border-bottom
+    border-style: solid dashed solid solid
+    top: 0
+    border-width: 60px 2880px 0 0
+    
+.border1 
+    border-color: transparent transparent transparent #F9FA7A
+.border2 
+    border-color: #F9FA7A transparent transparent transparent 
+.border3
+    border-color: transparent transparent transparent #ACB7D7
+.border4 
+    border-color: transparent #ACB7D7 transparent transparent
+    border-width: 0 2880px 60px 0
+.border5
+    border-color: transparent transparent #B9F281
+    border-width: 0 0 60px 2880px 
+    top: 0
+.border6 
+    border-color: #B9F281 transparent transparent transparent 
+.border7
+    border-color: transparent transparent transparent #fff
+
 #skills
-    background-color: #77825B
+    background-color: #F9FA7A
     h2
-        color: #56431F
-        border-bottom: 1px #56431F solid
-    p
-        border: 5px #B6B992 solid
-        padding: 10px
-        border-radius: 30px
-        -webkit-box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
-        -moz-box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
-        box-shadow: 0px 0px 21px 4px rgba(60,60,60,1);
-        strong
-            font-family: "FuturaRoundBold", sans-serif
+        color: #000
+        border-bottom: 1px #000 solid
+    span
+        display: inline-block
+        padding: 13px
+        font-size: 20px
+        font-family: "RobotoBold", sans-serif
+        color: #000;
+        border: 3px #000 solid;
+        -webkit-transition: all .5s
+        -o-transition: all .5s
+        transition: all .5s
+        margin-bottom: 10px
+        border-radius: 5px;
+        padding: 8px;
+        margin-left: 10px;
+        z-index: 1000
+        &:hover
+            background-color: #000
+            color: #fff
+
 .insert
-    height: 50px
+    height: 110px
     width: 100%
-    background-image: url(../img/bg1.jpg) 
+    background-image: url(../img/bg8.jpg) 
     background-attachment: fixed
+    position: relative
 #how_work
-    background-color: #5B8E8C
+    background-color: #ACB7D7
     h2
-        color: #1A413E
-        border-bottom: 1px #1A413E solid
+        color: #fff
+        border-bottom: 1px #fff solid
+    p
+        color: #fff
 
 .left 
     text-align: right
@@ -132,17 +186,24 @@ header
 .resume_item 
     margin-bottom: 40px
     .year 
-        font-family: "FuturaRoundBold", sans-serif
-        color: #772800
+        font-family: "RobotoBold", sans-serif
+        background-color: #00004D
+        color: #fff
+        display: inline-block
+        padding: 7px
+        font-size: 18px
+    p
+        color: #000
 .right
     text-align: left
 #portfolio
-    background-color: #7D6E6A;
+    background-color: #B9F281
     h2
         border-bottom: 1px #333 solid
         margin-bottom: 0
     h3
         font-size: 16px
+        font-weight: normal;
     .descr-cont
         width: 300px
         position: relative
@@ -164,8 +225,8 @@ header
             transition: all .5s
             a
                 padding: 8px
-                color: #D6C9A7
-                border: 2px #D6C9A7 solid
+                color: #FEFF80
+                border: 2px #FEFF80 solid
                 margin-top: 10px
                 display: inline-block
                 cursor: pointer
@@ -181,17 +242,18 @@ header
             top: 0
             transform: rotateY(0deg)
 #contacts
-    background-color: #845E50
+    padding-bottom: 15px
     h2
-        color: #610000
+        color: #860000
         border-bottom: 1px #610000 solid
         margin-bottom: 0
     p
         color: #000
         font-size: 25px
-        span
-            color: #860000
-            font-family: "FuturaRoundBold", sans-serif
+    span
+        color: #860000
+        font-weight: bold
+            
 
 
 .hidden
@@ -206,7 +268,7 @@ header
         background-color: #FFF
         text-align: center
         h3            
-            color: #D46F3B
+            color: #000
         p
           padding: 10px
           text-align: left
@@ -228,10 +290,10 @@ header
 footer
     background-color: #000
     text-align: center
-    padding: 40px
+    padding: 25px
     span
         color: #fff
         display: inline-block
 
 .mPS2id-highlight 
-    color: #D26308 !important
+    color: #FF4141 !important

@@ -1,11 +1,34 @@
 $(document).ready(function() {
 
+/*	var time = 1000;
+	var active_element_index = 0;
+    var prev_index = 0;
+    var skills = $('#skills span');
+    var skills_count = skills.length;
+    // circle();
+
+	function circle() { 
+		var active_skill = skills.eq(active_element_index);
+        skills.css({'background-color': '#F9FA7A'})
+    	active_skill.css({'background-color': '#000'})
+
+        if (active_element_index == skills_count-1) {
+            active_element_index = 0;
+        } else {
+            active_element_index++;
+        }
+    }  
+    var myTimer = setInterval(circle, time); */
+
+
+
+
 	$(".nav a").mPageScroll2id({
 		scrollSpeed : 200
 	});
 
 	$(window).load(function() {
-	$(".top_text, #skills h2, #skills p, #how_work h2, #portfolio h2, #portfolio h3, #contacts h2, #contacts p, .descr-cont").animated("zoomIn","zoomIn")
+	$(".top_text, #skills h2, #skills p, #how_work h2, #portfolio h2, #portfolio h3, #contacts h2, .descr-cont").animated("zoomIn","zoomIn")
 	$(".left .resume_item").animated("fadeInLeft","fadeInLeft")
 	$(".right .resume_item").animated("fadeInRight","fadeInRight")
 });
@@ -19,6 +42,8 @@ $(document).ready(function() {
 
 function wResize() {
 		$("header").css("height", $(window).height());
+		$(".section-border-top").css("border-left-width", $(window).width());
+		$(".section-border-bottom").css("border-right-width", $(window).width());
 	};
 	wResize();
 	$(window).resize(function() {
@@ -33,11 +58,11 @@ function wResize() {
 	}));
 
 	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
+	// if(!Modernizr.svg) {
+	// 	$("img[src*='svg']").attr("src", function() {
+	// 		return $(this).attr("src").replace(".svg", ".png");
+	// 	});
+	// };
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
