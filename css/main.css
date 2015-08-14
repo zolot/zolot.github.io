@@ -358,7 +358,7 @@ header .nav ul li a:hover, header .nav ul li a :focus {
   margin-bottom: 0;
 }
 
-#contacts p {
+#contacts p, #contacts a {
   color: #000;
   font-size: 25px;
 }
