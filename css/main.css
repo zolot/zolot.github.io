@@ -138,12 +138,28 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 .top_wrapper .top_descr .top_centered .top_text .advertising {
   text-align: center;
   font-size: 40px;
-  color: #D40000;
+  color: #FF0000;
   font-style: italic;
   max-width: 1024px;
   background-color: #E5F4FF;
   opacity: 0.75;
   padding: 15px;
+  position: relative;
+  border: 3px #fff solid;
+}
+
+.top_wrapper .top_descr .top_centered .top_text .advertising img {
+  position: absolute;
+  height: 40px;
+  top: -30px;
+}
+
+.top_wrapper .top_descr .top_centered .top_text .advertising .stud-left {
+  left: 0;
+}
+
+.top_wrapper .top_descr .top_centered .top_text .advertising .stud-right {
+  right: 0;
 }
 
 .top_wrapper .top_descr .top_centered .top_text > span {
@@ -353,7 +369,7 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 }
 
 #contacts h2 {
-  color: #860000;
+  color: #FF0000;
   border-bottom: 1px #610000 solid;
   margin-bottom: 0;
 }
@@ -364,8 +380,7 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 }
 
 #contacts span {
-  color: #860000;
-  font-weight: bold;
+  color: #FF0000;
 }
 
 .hidden {
