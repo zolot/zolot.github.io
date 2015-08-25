@@ -1,0 +1,384 @@
+@import "bourbon/bourbon"
+
+$text-color: #424242
+$red-color: #dd2a24
+$blue-color: #1287bf
+$dark-color: #2a2a2a
+$dark-grey-color: #515151
+$light-grey-color: #f3f3f3
+$border-grey-color: #e2e2e2
+
+body
+	font-family: "OpenSansRegular", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+section
+	padding: 80px 0
+input
+	display: block
+	height: 50px
+	text-indent: 20px
+	font-size: 14px
+	border-radius: 3px
+.button
+	padding: 15px 30px
+	display: inline-block
+	font-family: "HelveticaBold"
+	color: #fff
+	border-radius: 5px
+	border: none
+	cursor: pointer
+.btn-red 
+		background-color: $red-color
+		padding: 10px 25px
+		color: #fff
+		&:hover
+			color: #fff
+.mPS2id-highlight
+	color: $red-color !important
+
+.header-top-line
+	background-color: $light-grey-color
+	border-bottom: 1px $border-grey-color solid
+	padding: 10px 0
+	.contacts-box
+		text-align: right
+		.contact,
+		.fb
+			font-size: 15px
+			display: inline-block
+			margin:  0 15px
+			font-family: 'HelveticaRegular' 
+			i
+				font-size: 24px
+				margin-right: 10px
+				cursor: pointer
+			.fa-facebook-square			
+				color: $blue-color
+				font-size: 32px
+		.fb 
+			margin: 0
+
+.main-menu
+	padding: 40px 0
+	position: relative
+	.logo-box
+		i 
+			float: left
+			font-size: 57px
+			margin-right: 5px
+			color: $red-color
+		.logo-text-box
+			span
+				font-size: 37px
+				line-height: 37px
+				font-family: "HelveticaBold"
+			p 
+				font-size: 15px
+				font-family: 'HelveticaRegular'
+				margin: 0
+	nav
+		text-align: right
+		ul 
+			padding: 0
+			li
+				display: inline-block
+				a 
+					padding: 15px
+					font-size: 15px
+					line-height: 30px
+					color: $text-color
+					font-family: "HelveticaBold"
+					&:hover, &:focus, &.active
+						color: $red-color
+						text-decoration: none
+	.btn-red 
+		padding: 3px 15px
+		margin-left: 10px
+		color: #fff !important
+		&:hover
+				color: #fff
+	#main-menu-btn 
+		position: absolute
+		right: 15px
+		z-index: 1000
+		border: none
+		background-color: #FFF
+		i 
+			font-size: 37px
+			line-height: 55px
+	#main-nav 
+		z-index: 1000
+		background-color: #FFF
+.default
+	top: 85px
+	right: 0
+.fixed 
+	top: 0 !important
+	right: 0 !important
+	margin: 0
+	position: fixed !important
+
+.top-section 
+	background-image: url(../img/top-img.jpg)
+	background-position: center
+	height: 75vh
+	background-size: cover
+	position: relative
+	.top-wrapper 
+		display: table 
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		.top-descr
+			display: table-row
+			.top-centered
+				display: table-cell
+				text-align: center
+				vertical-align: middle
+				color: #fff
+				h1
+					font-size: 45px
+					line-height: 45px
+					font-family: "HelveticaBold"
+					margin-bottom: 0
+				span 
+					font-size: 30px
+					font-family: "HelveticaLight"
+					margin-bottom: 30px
+					display: block
+				.btn-yellow
+					background-color: #f8cd53
+					font-size: 23px
+					font-family: "HelveticaBold"
+					color: #fff
+					text-transform: uppercase
+					&:hover
+						text-decoration: none
+.section-head
+	text-align: center
+	h2
+		font-size: 33px
+		line-height: 37px
+		font-family: "HelveticaBold"
+		margin: 0
+	span
+		font-size: 20px
+		font-family: "HelveticaLight"
+	.line
+		height: 5px
+		width: 45px
+		background-color: $text-color
+		margin: 15px auto 40px
+
+#about-us 
+	background-color: #FFF
+	.about-info-box
+		text-align: center
+		h3
+			font-family: "HelveticaBold"
+			font-size: 22px	
+			margin-bottom: 10px
+		p 
+			margin-top: 0
+#our-approch
+	background-color: $light-grey-color
+	.step-box
+		width: 100%
+		background-color: #FFF
+		overflow: hidden
+		display: table
+		margin-bottom: 40px
+		img
+			width: 100%
+			height: auto
+		.step-text
+			width: 66.666%
+			position: relative
+			vertical-align: middle
+			display: table-cell
+			h4
+				font-size: 15px
+				font-family: "HelveticaBold"
+				margin: 10px 0
+			p 
+				margin: 0
+		.step-number 
+			background-color: $red-color
+			font-family: "HelveticaRegular"
+			color: #fff
+			border: 2px #fff solid
+			display: inline-block
+			text-align: center
+			width: 100px
+			height: 100px
+			padding-top: 15px
+			border-radius: 7px
+			position: absolute
+			top: 50%;
+			bottom: 50%;
+			margin-top: -50px;
+			strong
+				font-size: 45px
+				line-height: 45px
+				display: block
+			span 
+				font-size: 18px
+				line-height: 18px
+				display: block
+	.odd 
+		padding: 0 30px 0 75px
+		.step-number
+			left: -50px
+	.even
+		text-align: right
+		padding: 0 75px 0 30px  
+		.step-number 
+			right: -50px
+#our-work
+	background-color: $red-color
+	color: #fff
+	.line
+		background-color: #FFF
+	.project-box
+		width: 100%
+		background-color: #f35e59
+		overflow: hidden
+		display: block
+		margin: -2px
+		.project-info-box
+			text-align: center
+			.project-table
+				display: table
+				width: 100%
+				.center-box
+					display: table-cell
+					vertical-align: middle
+					width: 50%
+					i 
+						font-size: 36px
+						color: #f9afac
+					h3
+						font-size: 24px
+						margin-bottom: 0
+					span
+						font-family: "HelveticaBold"
+				img			
+					width: 100%
+					float: right
+	.left-project-container
+		float: left
+	.right-project-container
+		float: right
+	.project-container
+		width: 50%
+
+#feedback
+	background-color: #1287bf
+	.section-head
+		color: #fff
+		.arrow-box
+			i 
+				font-size: 40px
+				line-height: 44px
+				border: 3px #fff solid
+				border-radius: 50%
+				width: 50px
+				height: 50px
+				margin: 15px 0 50px
+	form
+		background-color: #FFF
+		padding: 40px 60px
+		border-radius: 3px
+		max-width: 685px
+		margin: 0 auto
+		text-align: center
+		font-size: 15px
+		font-family: 'HelveticaRegular' 
+		color: #828282
+		position: relative
+		p 
+			margin: 0 0 30px
+		input
+			width: 100%
+			max-width: 445px
+			color: #b0b0b0
+			margin: 0 auto 7px
+			border: 1px #b0b0b0 solid
+		.btn-red
+			text-transform: uppercase
+			margin-top: 20px
+		.arrow-form
+			border: 30px solid transparent	
+			border-bottom: 30px solid #fff
+			position: absolute
+			top: -59px
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			width: 30px
+
+#get-in-touch
+	background-color: $dark-color
+	color: #fff
+	.section-head
+		h2
+			font-size: 29px
+			margin-bottom: 25px
+		p
+			color: $light-grey-color
+			margin: 35px auto
+	.soc-networks
+		a
+			color: #fff
+			font-size: 23px
+			border: 2px $dark-grey-color solid
+			padding: 5px 12px
+			margin: 0 7px
+			&:hover
+				border: 2px $red-color solid
+	input
+		border: none
+		margin: 0 auto
+		max-width: 683px
+		width: 65%
+		background-color: $dark-grey-color
+	.button-wrap
+		text-align: center
+		.button
+			margin: 25px auto 0
+			background-color: transparent
+			border: 2px $dark-grey-color solid
+			box-sizing: border-box
+			&:hover
+				border: 2px $dark-grey-color solid
+				background-color: #FFF
+				color: $dark-color
+
+footer
+	background-color: $dark-grey-color
+	padding: 20px 0
+	text-align: center
+	color: $light-grey-color
+
+.clear
+	clear: both
+
+.hidden
+	display: none

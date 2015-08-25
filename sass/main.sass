@@ -230,14 +230,15 @@ header
         font-size: 16px
         font-weight: normal;
     .descr-cont
-        width: 300px
+        width: 285px
+        display: inline-block
         position: relative
         margin: 0 auto 10px
         .descr 
             position: absolute
             font-size: 16px;
             left: 0
-            width: 300px
+            width: 100%
             height: 100%
             background-color: rgba(0, 0, 0, .7)
             color: #fff
@@ -255,12 +256,11 @@ header
                 margin-top: 10px
                 display: inline-block
                 cursor: pointer
-            :hover
                 text-decoration: none
-
-            
+            :hover
+                text-decoration: none            
         img
-            width: 300px
+            width: 100%
             height: 250px
         &:hover .descr 
             opacity: 1
