@@ -1,0 +1,137 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.content {
+    padding: 0 25px 5px;
+}
+}
+
+@media only screen and (max-width : 850px) {
+.hidden-mob {
+    display: none;
+    }
+.header .main-title {
+    top: 6%;
+    left: 24.5%;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .content .advantages-wrap {
+        display: block;
+    }
+    .content .advantages-wrap .advantage {
+        min-width: 300px;
+        width: 72%;
+        border: none;
+        margin: 0 auto;
+    }
+    footer {
+        background-color: #fff;
+        text-align: center;
+        padding-top: 30px;
+    }
+    footer .logo-wrap {
+        width: 100%;
+    }
+    footer .logo-wrap .right {
+        display: block;
+    }
+    footer .bottom-info {
+        text-align: justify;
+    }
+    footer .logo-wrap .right p {
+        margin-top: 15px;
+    }
+    form {
+        border: none;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .content .even .form {
+        margin-right: 145px;
+    }
+    .content .odd .form {
+        margin: 0 0 0 145px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .header .main-title {
+        left: 50%;
+        margin-left: -154px;
+    }
+    .content {
+        padding: 0 10px 5px;
+    }
+    .content .step-wrap .number {
+        display: none;
+  }
+    .content .step-wrap .form {
+        width: 100%;
+        margin: 0;
+  }
+  .content .advantages-wrap .advantage {
+    width: 90%;
+    padding: 25px 10px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.content form button {
+    font-size: 15px;
+    height: 55px;
+    line-height: 55px;
+}
+footer {
+    padding: 30px 20px
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.content .advantages-wrap .advantage-1 p,
+.content .advantages-wrap .advantage-3 p {
+ margin-top: 35px;
+}
+}
+
+@media only screen and (min-width : 850px) {
+.hidden-on-big {
+    display: none;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
