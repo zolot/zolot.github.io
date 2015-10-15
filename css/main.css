@@ -20,6 +20,13 @@ body textarea:required:valid {
   color: green;
 }
 
+a,
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
 .loader {
   position: fixed;
   background-color: #fff;
@@ -46,12 +53,16 @@ section {
   padding: 15px 0;
 }
 
+section .line {
+  width: 250px;
+}
+
 h2 {
   font-family: "RobotoBold", sans-serif;
   font-size: 35px;
-  display: inline-block;
   padding: 0 40px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 header {
@@ -163,7 +174,6 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 .top_wrapper .top_descr .top_centered .top_text > span {
   display: inline-block;
-  border-bottom: 3px #fff solid;
   padding: 10px 120px;
   font-size: 40px;
   margin-bottom: 0;
@@ -230,7 +240,6 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 #skills h2 {
   color: #000;
-  border-bottom: 1px #000 solid;
 }
 
 #skills span {
@@ -269,11 +278,14 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 #how_work h2 {
   color: #fff;
-  border-bottom: 1px #fff solid;
 }
 
 #how_work p {
   color: #fff;
+}
+
+#how_work .line {
+  margin: 10px 0 20px;
 }
 
 .left {
@@ -307,7 +319,6 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 }
 
 #portfolio h2 {
-  border-bottom: 1px #333 solid;
   margin-bottom: 0;
 }
 
@@ -371,7 +382,6 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 #contacts h2 {
   color: #FF0000;
-  border-bottom: 1px #610000 solid;
   margin-bottom: 0;
 }
 
@@ -399,6 +409,7 @@ header .nav ul li a:hover, header .nav ul li a :focus {
   color: #000;
   background-color: #FFF;
   text-align: center;
+  text-shadow: none;
 }
 
 .mfp-content .site h3 {
@@ -417,6 +428,7 @@ header .nav ul li a:hover, header .nav ul li a :focus {
   text-transform: uppercase;
   padding: 8px;
   margin-bottom: 10px;
+  font-family: "RobotoBold", sans-serif;
 }
 
 .mfp-content .site a:hover {

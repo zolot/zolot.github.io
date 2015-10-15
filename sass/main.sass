@@ -18,6 +18,11 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
     color: green
+a,
+button, 
+button:active, 
+button:focus 
+    outline: none
 .loader
     position: fixed;
     background-color: #fff;
@@ -38,12 +43,14 @@ section
     text-align: center
     font-size: 20px
     padding: 15px 0
+    .line
+        width: 250px
 h2
     font-family: "RobotoBold", sans-serif
     font-size: 35px;
-    display: inline-block
     padding: 0 40px
     text-transform: uppercase
+    margin-bottom: 0px
     
 header
     background-image: url(../img/bg8.jpg)  
@@ -128,7 +135,6 @@ header
                         right: 0
                 > span
                     display: inline-block
-                    border-bottom: 3px #fff solid
                     padding: 10px 120px;
                     font-size: 40px;
                     margin-bottom: 0;
@@ -171,7 +177,6 @@ header
     background-color: #F9FA7A
     h2
         color: #000
-        border-bottom: 1px #000 solid
     span
         display: inline-block
         padding: 13px
@@ -201,9 +206,10 @@ header
     background-color: #ACB7D7
     h2
         color: #fff
-        border-bottom: 1px #fff solid
     p
         color: #fff
+    .line
+        margin: 10px 0 20px 
 
 .left 
     text-align: right
@@ -224,7 +230,6 @@ header
 #portfolio
     background-color: #B9F281
     h2
-        border-bottom: 1px #333 solid
         margin-bottom: 0
     h3
         font-size: 16px
@@ -270,7 +275,6 @@ header
     padding-bottom: 15px
     h2
         color: #FF0000
-        border-bottom: 1px #610000 solid
         margin-bottom: 0
     p, a
         color: #000
@@ -291,6 +295,7 @@ header
         color: #000
         background-color: #FFF
         text-align: center
+        text-shadow: none
         h3            
             color: #000
         p
@@ -303,6 +308,8 @@ header
             text-transform: uppercase
             padding: 8px
             margin-bottom: 10px  
+            font-family: "RobotoBold", sans-serif
+
             &:hover
                 text-decoration: none
                 background-color: #4283BC
