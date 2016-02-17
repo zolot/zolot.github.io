@@ -329,6 +329,8 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 #portfolio .descr-cont {
   width: 285px;
+  height: 250px;
+  overflow: hidden;
   display: inline-block;
   position: relative;
   margin: 0 auto 10px;
@@ -367,7 +369,8 @@ header .nav ul li a:hover, header .nav ul li a :focus {
 
 #portfolio .descr-cont img {
   width: 100%;
-  height: 250px;
+  height: auto;
+  min-height: 250px;
 }
 
 #portfolio .descr-cont:hover .descr {
